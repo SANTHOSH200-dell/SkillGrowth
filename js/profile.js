@@ -1,0 +1,1 @@
+(async()=>{try{const u=await api("/api/auth/me");profileInfo.innerHTML=`<div class="item"><h2>${u.full_name}</h2><p>${u.email}</p><p>${u.college||"College not added"} · ${u.department||"Department not added"} · ${u.study_year||"Year not added"}</p><p>Growth Score: ${u.growth_score||0}</p></div>`}catch(e){profileInfo.textContent=e.message}})();

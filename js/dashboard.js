@@ -1,0 +1,1 @@
+(async()=>{try{const u=await api("/api/auth/me"),s=await api("/api/skills/my"),p=await api("/api/projects/my"),a=await api("/api/internships/my");growthScore.textContent=u.growth_score||0;skillCount.textContent=s.length;projectCount.textContent=p.length;applicationCount.textContent=a.length}catch(e){console.error(e)}})();
